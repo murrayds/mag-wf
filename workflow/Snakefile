@@ -1,0 +1,45 @@
+from os.path import join as j
+from os.path import basename
+
+MAG_DIR = "/scratch/d.murray/mag/"
+
+PAPERS = j(MAG_DIR, "Papers.txt")
+AUTHORS = j(MAG_DIR, "Authors.txt")
+AFFILIATIONS = j(MAG_DIR, "Affiliations.txt")
+JOURNALS = j(MAG_DIR, "Journals.txt")
+PAPER_URLS = j(MAG_DIR, "PaperUrls.txt")
+PAPER_REFERENCS = j(MAG_DIR, "PaperReferences.txt")
+PAPER_AUTHOR_AFFILIATIONS = j(MAG_DIR, "PaperAuthorAffiliations.txt")
+PAPER_MESH = j(MAG_DIR, "PaperMeSH.txt")
+FIELDS_OF_STUDY = j(MAG_DIR, "FieldsOfStudy.txt")
+FIELDS_OF_STUDY_CHILDREN = j(MAG_DIR, "FieldsOfStudyChildren.txt")
+PAPER_FIELDS_OF_STUDY = j(MAG_DIR, "PaperFieldsOfStudy.txt")
+
+
+MAG_MAIN_FILES = j(MAG_DIR, "main", "{file}.txt")
+MAG_ADV_FILES = j(MAG_DIR, "advanced", "{file}.txt")
+
+main_files = ["Papers", "Authors", "Affiliations", "Journals", 
+              "PaperUrls", "PaperReferences", "PaperAuthorAffiliations"]
+            
+adv_files = ["PaperMeSH", "FieldsOfStudy", "FieldsOfStudyChildren", "PaperFieldsOfStudy"]
+
+
+rule all:
+    input:
+        expand(MAG_MAIN_FILES, file = main_files), 
+        expand(MAG_ADV_FILES, file = adv_files),
+
+rule download_mag_main_from_gcloud:
+    output: MAG_MAIN_FILES
+    run: 
+        source = os.path.basename(output[0])
+        command = "gsutil cp -n gs://mag2021oct/mag/2021-08-30/mag/{} {}".format(source, output[0])
+        shell(command)
+
+rule download_mag_adv_from_gcloud:
+    output: MAG_ADV_FILES
+    run: 
+        source = os.path.basename(output[0])
+        command = "gsutil cp -n gs://mag2021oct/mag/2021-08-30/advanced/{} {}".format(source, output[0])
+        shell(command)
