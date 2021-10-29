@@ -1,8 +1,18 @@
 from os.path import join as j
 from os.path import basename
 
-MAG_RAW_DIR = "/scratch/d.murray/mag-raw/"
+configfile:
+    "config/config.json"
 
+##############################################################################
+# Folders
+###############################################################################
+MAG_RAW_DIR = config["raw_data_path"]
+MAG_PROC_DIR = config["proc_data_path"]
+
+##############################################################################
+# Files
+###############################################################################
 PAPERS = j(MAG_RAW_DIR, "Papers.txt")
 AUTHORS = j(MAG_RAW_DIR, "Authors.txt")
 AFFILIATIONS = j(MAG_RAW_DIR, "Affiliations.txt")
@@ -19,27 +29,36 @@ PAPER_FIELDS_OF_STUDY = j(MAG_RAW_DIR, "PaperFieldsOfStudy.txt")
 MAG_MAIN_FILES = j(MAG_RAW_DIR, "main", "{file}.txt")
 MAG_ADV_FILES = j(MAG_RAW_DIR, "advanced", "{file}.txt")
 
-main_files = ["Papers", "Authors", "Affiliations", "Journals", 
+
+##############################################################################
+# Parameters
+###############################################################################
+main_files = ["Papers", "Authors", "Affiliations", "Journals",
               "PaperUrls", "PaperReferences", "PaperAuthorAffiliations"]
-            
+
 adv_files = ["PaperMeSH", "FieldsOfStudy", "FieldOfStudyChildren", "PaperFieldsOfStudy"]
 
-
+##############################################################################
+# Target
+###############################################################################
 rule all:
     input:
-        expand(MAG_MAIN_FILES, file = main_files), 
+        expand(MAG_MAIN_FILES, file = main_files),
         expand(MAG_ADV_FILES, file = adv_files),
 
+##############################################################################
+# Rules
+###############################################################################
 rule download_mag_main_from_gcloud:
     output: MAG_MAIN_FILES
-    run: 
+    run:
         source = os.path.basename(output[0])
         command = "gsutil cp -n gs://mag2021oct/mag/2021-08-30/mag/{} {}".format(source, output[0])
         shell(command)
 
 rule download_mag_adv_from_gcloud:
     output: MAG_ADV_FILES
-    run: 
+    run:
         source = os.path.basename(output[0])
         command = "gsutil cp -n gs://mag2021oct/mag/2021-08-30/advanced/{} {}".format(source, output[0])
         shell(command)
