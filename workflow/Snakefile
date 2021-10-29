@@ -1,28 +1,28 @@
 from os.path import join as j
 from os.path import basename
 
-MAG_DIR = "/scratch/d.murray/mag/"
+MAG_RAW_DIR = "/scratch/d.murray/mag-raw/"
 
-PAPERS = j(MAG_DIR, "Papers.txt")
-AUTHORS = j(MAG_DIR, "Authors.txt")
-AFFILIATIONS = j(MAG_DIR, "Affiliations.txt")
-JOURNALS = j(MAG_DIR, "Journals.txt")
-PAPER_URLS = j(MAG_DIR, "PaperUrls.txt")
-PAPER_REFERENCS = j(MAG_DIR, "PaperReferences.txt")
-PAPER_AUTHOR_AFFILIATIONS = j(MAG_DIR, "PaperAuthorAffiliations.txt")
-PAPER_MESH = j(MAG_DIR, "PaperMeSH.txt")
-FIELD_OF_STUDY = j(MAG_DIR, "FieldOfStudy.txt")
-FIELD_OF_STUDY_CHILDREN = j(MAG_DIR, "FieldOfStudyChildren.txt")
-PAPER_FIELDS_OF_STUDY = j(MAG_DIR, "PaperFieldsOfStudy.txt")
+PAPERS = j(MAG_RAW_DIR, "Papers.txt")
+AUTHORS = j(MAG_RAW_DIR, "Authors.txt")
+AFFILIATIONS = j(MAG_RAW_DIR, "Affiliations.txt")
+JOURNALS = j(MAG_RAW_DIR, "Journals.txt")
+PAPER_URLS = j(MAG_RAW_DIR, "PaperUrls.txt")
+PAPER_REFERENCS = j(MAG_RAW_DIR, "PaperReferences.txt")
+PAPER_AUTHOR_AFFILIATIONS = j(MAG_RAW_DIR, "PaperAuthorAffiliations.txt")
+PAPER_MESH = j(MAG_RAW_DIR, "PaperMeSH.txt")
+FIELDS_OF_STUDY = j(MAG_RAW_DIR, "FieldsOfStudy.txt")
+FIELD_OF_STUDY_CHILDREN = j(MAG_RAW_DIR, "FieldOfStudyChildren.txt")
+PAPER_FIELDS_OF_STUDY = j(MAG_RAW_DIR, "PaperFieldsOfStudy.txt")
 
 
-MAG_MAIN_FILES = j(MAG_DIR, "main", "{file}.txt")
-MAG_ADV_FILES = j(MAG_DIR, "advanced", "{file}.txt")
+MAG_MAIN_FILES = j(MAG_RAW_DIR, "main", "{file}.txt")
+MAG_ADV_FILES = j(MAG_RAW_DIR, "advanced", "{file}.txt")
 
 main_files = ["Papers", "Authors", "Affiliations", "Journals", 
               "PaperUrls", "PaperReferences", "PaperAuthorAffiliations"]
             
-adv_files = ["PaperMeSH", "FieldOfStudy", "FieldOfStudyChildren", "PaperFieldsOfStudy"]
+adv_files = ["PaperMeSH", "FieldsOfStudy", "FieldOfStudyChildren", "PaperFieldsOfStudy"]
 
 
 rule all:
