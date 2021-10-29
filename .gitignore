@@ -3,7 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-samples
+# ignore snakemake files
+.snakemake
 
 # C extensions
 *.so
