@@ -8,5 +8,5 @@
     "mode": "REQUIRED",
     "name": "PaperReferenceId",
     "type": "INTEGER"
-  },
+  }
 ]

@@ -1,5 +1,3 @@
-"PaperMeSH":
-    ["PaperId", "DescriptorUI", "DescriptorName", "QualifierUI", "QualifierName", "IsMajorTopic"]
 [
   {
     "mode": "REQUIRED",

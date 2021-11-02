@@ -12,6 +12,6 @@
   {
     "mode": "NULLABLE",
     "name": "Score",
-    "type": "FLOATING POINT"
+    "type": "FLOAT64"
   }
 ]
