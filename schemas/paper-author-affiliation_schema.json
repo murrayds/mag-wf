@@ -1,7 +1,7 @@
 [
   {
     "mode": "REQUIRED",
-    "name": "JournalId",
+    "name": "PaperId",
     "type": "INTEGER"
   },
   {

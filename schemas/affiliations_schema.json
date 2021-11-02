@@ -36,6 +36,16 @@
   },
   {
     "mode": "NULLABLE",
+    "name": "PaperCount",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PaperFamilyCount",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
     "name": "CitationCount",
     "type": "INTEGER"
   },
