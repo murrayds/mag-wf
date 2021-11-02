@@ -4,7 +4,7 @@
        "BookTitle", "Year", "Date", "OnlineDate", "Publisher", "JournalId",
        "ConferenceSeriesId", "ConferenceInstanceId", "Volume", "Issue",
        "FirstPage", "LastPage", "ReferenceCount", "CitationCount",
-       "EstimatedCitation", "OriginalVenue", "FamilyId", "CreatedDate"],
+       "EstimatedCitation", "OriginalVenue", "FamilyId", "FamilyRank", "CreatedDate"],
   "Authors":
       ["AuthorId", "Rank", "NormalizedName", "DisplayName", "LastKnownAffiliationId",
        "PaperCount", "PaperFamilyCount", "CitationCount", "CreateDate"],
