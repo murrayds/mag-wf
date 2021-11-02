@@ -51,7 +51,7 @@
   },
   {
     "mode": "NULLABLE",
-    "name": "Iso3116Code",
+    "name": "Iso3166Code",
     "type": "String"
   },
   {
