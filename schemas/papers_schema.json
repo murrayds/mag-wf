@@ -1,0 +1,124 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "CreatedDate",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "EstimatedCitation",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Publisher",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "CitationCount",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "LastPage",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "FamilyId",
+    "type": "INTEGER"
+  },
+  {
+    "description": "%E4Y-%m-%d",
+    "mode": "NULLABLE",
+    "name": "OnlineDate",
+    "type": "DATE"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Issue",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Volume",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ConferenceInstanceId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ConferenceSeriesId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "FirstPage",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "JournalId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "OriginalTitle",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "DocType",
+    "type": "STRING"
+  },
+  {
+    "description": "%E4Y-%m-%d",
+    "mode": "NULLABLE",
+    "name": "Date",
+    "type": "DATE"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Rank",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ReferenceCount",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Doi",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Year",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "BookTitle",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PaperTitle",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "OriginalVenue",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PaperId",
+    "type": "INTEGER"
+  }
+]

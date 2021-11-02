@@ -17,7 +17,7 @@ MAG_PROC = config["proc_data_path"]
 # Files
 ###############################################################################
 
-MAG_MAIN_FILES = j(MAG_RAW, "main", "{file}.txt")
+MAG_MAIN_FILES = j(MAG_RAW, "mag", "{file}.txt")
 MAG_ADV_FILES = j(MAG_RAW, "advanced", "{file}.txt")
 
 MAG_MAIN_FILES_PROC = j(MAG_PROC, "main", "{file}.jsonl")

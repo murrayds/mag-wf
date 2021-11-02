@@ -1,4 +1,4 @@
 {
-    "raw_data_path": "/Users/dakotamurray/Documents/mag-wf/samples/",
-    "proc_data_path": "/Users/dakotamurray/Documents/mag-wf/processed/",
+    "raw_data_path": "/scratch/d.murray/mag-raw/",
+    "proc_data_path": "/scratch/d.murray/mag-proc/",
 }
