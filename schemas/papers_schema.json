@@ -122,6 +122,11 @@
     "type": "INTEGER"
   },
   {
+    "mode": "NULLABLE",
+    "name": "DocSubTypes",
+    "type": "STRING"
+  },
+  {
     "description": "%E4Y-%m-%d",
     "mode": "NULLABLE",
     "name": "CreatedDate",
