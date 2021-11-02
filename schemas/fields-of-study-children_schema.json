@@ -1,0 +1,12 @@
+[
+  {
+    "mode": "REQUIRED",
+    "name": "FieldOfStudyId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "ChildFieldOfStudyId",
+    "type": "INTEGER"
+  }
+]

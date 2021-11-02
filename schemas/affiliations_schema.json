@@ -1,0 +1,63 @@
+[
+  {
+    "mode": "REQUIRED",
+    "name": "AffiliationId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Rank",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "NormalizedName",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "DisplayName",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "GridId",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "OfficialPage",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "WikiPage",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "CitationCount",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Iso3116Code",
+    "type": "String"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Latitude",
+    "type": "FLOATING POINT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Longitude",
+    "type": "FLOATING POINT"
+  },
+  {
+    "description": "%E4Y-%m-%d",
+    "mode": "NULLABLE",
+    "name": "CreatedDate",
+    "type": "DATE"
+  }
+]

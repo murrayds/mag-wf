@@ -1,0 +1,32 @@
+[
+  {
+    "mode": "REQUIRED",
+    "name": "JournalId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "AuthorId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "AffiliationId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "AuthorSequenceNumber",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "OriginalAuthor",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "OriginalAffiliation",
+    "type": "STRING"
+  }
+]

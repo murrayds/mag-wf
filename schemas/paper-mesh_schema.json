@@ -1,0 +1,34 @@
+"PaperMeSH":
+    ["PaperId", "DescriptorUI", "DescriptorName", "QualifierUI", "QualifierName", "IsMajorTopic"]
+[
+  {
+    "mode": "REQUIRED",
+    "name": "PaperId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "DescriptorUI",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "DescriptorName",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "QualifierUI",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "QualifierName",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "IsMajorTopic",
+    "type": "BOOLEAN"
+  }
+]

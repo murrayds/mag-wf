@@ -1,0 +1,17 @@
+[
+  {
+    "mode": "REQUIRED",
+    "name": "PaperId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "FieldOfStudyId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Score",
+    "type": "FLOATING POINT"
+  }
+]

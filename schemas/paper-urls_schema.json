@@ -1,0 +1,22 @@
+[
+  {
+    "mode": "REQUIRED",
+    "name": "PaperId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "SourceType",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "SourceUrl",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "LanguageCode",
+    "type": "STRING"
+  }
+]

@@ -117,8 +117,9 @@
     "type": "INTEGER"
   },
   {
+    "description": "%E4Y-%m-%d",
     "mode": "NULLABLE",
     "name": "CreatedDate",
-    "type": "INTEGER"
-  },
+    "type": "DATE"
+  }
 ]

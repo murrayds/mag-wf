@@ -1,0 +1,58 @@
+[
+  {
+    "mode": "REQUIRED",
+    "name": "JournalId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Rank",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "NormalizedName",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "DisplayName",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Issn",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Publisher",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Webpage",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PaperCount",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PaperFamilyCount",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "CitationCount",
+    "type": "INTEGER"
+  },
+  {
+    "description": "%E4Y-%m-%d",
+    "mode": "NULLABLE",
+    "name": "CreatedDate",
+    "type": "DATE"
+  }
+]

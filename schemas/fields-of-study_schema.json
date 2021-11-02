@@ -1,0 +1,53 @@
+[
+  {
+    "mode": "REQUIRED",
+    "name": "FieldOfStudyId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Rank",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "NormalizedName",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "DisplayName",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "MainType",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "Level",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PaperCount",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "PaperFamilyCount",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "CitationCount",
+    "type": "INTEGER"
+  },
+  {
+    "description": "%E4Y-%m-%d",
+    "mode": "NULLABLE",
+    "name": "CreatedDate",
+    "type": "DATE"
+  }
+]

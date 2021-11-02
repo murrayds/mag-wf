@@ -1,0 +1,12 @@
+[
+  {
+    "mode": "REQUIRED",
+    "name": "PaperId",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "REQUIRED",
+    "name": "PaperReferenceId",
+    "type": "INTEGER"
+  },
+]
