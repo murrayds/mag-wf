@@ -24,6 +24,9 @@ MAG_ADV_FILES_PROC = j(MAG_PROC, "advanced", "{file}.jsonl")
 
 MAG_SCHEMAS = "schemas/{file}_schema.json"
 
+BQ_MAIN_LOGS = j(MAG_PROC, "main", "Logs", "{file}_upload.log")
+BQ_ADV_LOGS = j(MAG_PROC, "advanced", "Logs", "{file}_upload.log")
+
 ##############################################################################
 # Parameters
 ###############################################################################
@@ -41,6 +44,9 @@ rule all:
         expand(MAG_ADV_FILES, file = adv_files),
         expand(MAG_MAIN_FILES_PROC, file = main_files),
         expand(MAG_ADV_FILES_PROC, file = adv_files),
+        expand(BQ_MAIN_LOGS, file = main_files),
+        expand(BQ_ADV_LOGS, file = adv_files)
 
 include: "rules/download.smk"
 include: "rules/process.smk"
+include: "rules/upload.smk"
