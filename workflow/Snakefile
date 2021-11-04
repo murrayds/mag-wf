@@ -19,12 +19,12 @@ MAG_PROC = config["proc_data_path"]
 MAG_MAIN_FILES = j(MAG_RAW, "mag", "{file}.txt")
 MAG_ADV_FILES = j(MAG_RAW, "advanced", "{file}.txt")
 
-MAG_MAIN_FILES_PROC = j(MAG_PROC, "main", "{file}.jsonl")
+MAG_MAIN_FILES_PROC = j(MAG_PROC, "mag", "{file}.jsonl")
 MAG_ADV_FILES_PROC = j(MAG_PROC, "advanced", "{file}.jsonl")
 
 MAG_SCHEMAS = "schemas/{file}_schema.json"
 
-BQ_MAIN_LOGS = j(MAG_PROC, "main", "Logs", "{file}_upload.log")
+BQ_MAIN_LOGS = j(MAG_PROC, "mag", "Logs", "{file}_upload.log")
 BQ_ADV_LOGS = j(MAG_PROC, "advanced", "Logs", "{file}_upload.log")
 
 ##############################################################################
@@ -45,7 +45,7 @@ rule all:
         expand(MAG_MAIN_FILES_PROC, file = main_files),
         expand(MAG_ADV_FILES_PROC, file = adv_files),
         expand(BQ_MAIN_LOGS, file = main_files),
-        expand(BQ_ADV_LOGS, file = adv_files)
+        #expand(BQ_ADV_LOGS, file = adv_files)
 
 include: "rules/download.smk"
 include: "rules/process.smk"

@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --nodes=1
+#SBATCH --nodes=2
 #SBATCH --ntasks-per-node=2
-#SBATCH --time=8:00:00
+#SBATCH --time=12:00:00
 #SBATCH --job-name=mag
 #SBATCH --exclusive
-#SBATCH --mem=8G
+#SBATCH --mem=4G
 #SBATCH --partition=short
 
 # a job to run conda on a server that implements slurm
 snakemake --unlock
-snakemake -j 2 --rerun-incomplete --latency-wait 30
+snakemake -j 4 --rerun-incomplete --latency-wait 30
